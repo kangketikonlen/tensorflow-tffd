@@ -1,5 +1,8 @@
 # Import Required libraries
 import os
+import tensorflow as tf
+from check import dir_path
+
 # Set the batch size, width, height and the percentage of the validation split.
 batch_size = 60
 IMG_HEIGHT = 224

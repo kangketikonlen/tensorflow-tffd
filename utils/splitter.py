@@ -2,9 +2,9 @@ import cv2
 import os
 
 path = os.getcwd()
-filename = "risu.mp4"
+filename = "moona.mp4"
 upload_dir = os.path.join(path, "uploads/", filename)
-output_dir = os.path.join(path, "outputs/risu/")
+output_dir = os.path.join(path, "outputs/moona/")
 capture = cv2.VideoCapture(upload_dir)
 frameNr = 0
 while (True):
