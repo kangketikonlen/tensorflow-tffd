@@ -1,5 +1,4 @@
 # Import Required libraries
-import os
 import tensorflow as tf
 from check import dir_path
 

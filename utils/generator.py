@@ -3,8 +3,8 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 from check import classes, dir_path
-from tensorflow.keras.models import Sequential, load_model, Model
-from tensorflow.keras.layers import Dense, Conv2D, Dropout, MaxPooling2D, GlobalAveragePooling2D, Activation
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Conv2D, Dropout, MaxPooling2D, GlobalAveragePooling2D
 from tensorflow.keras.optimizers import Adam
 
 # Set the batch size, width, height and the percentage of the validation split.
