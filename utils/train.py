@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from generator import model, train_data_generator, vald_data_generator, batch_size
 
-epochs = 60
+epochs = 5
 
 # Start Training
 history = model.fit(
