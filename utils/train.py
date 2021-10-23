@@ -1,10 +1,13 @@
+import os
+import cv2
+import onnx
+import keras2onnx
+import numpy as np
+import matplotlib.pyplot as plt
+from tensorflow.keras.models import load_model
 from generator import model, train_data_generator, vald_data_generator, batch_size
 from check import classes
 from splitter import object_name
-import os
-import cv2
-import numpy as np
-import matplotlib.pyplot as plt
 
 epochs = 5
 
@@ -74,7 +77,13 @@ plt.axis("off")
 path = os.getcwd()
 dir_name = os.path.dirname(path)
 # Saving your model to disk allows you to use it later
-model.save(dir_name+'/'+object_name+'.h5')
+model.save(dir_name+'/models/'+object_name+'.h5')
 
-# Later on you can load your model this way
-#model = load_model('Model/flowers.h5')
+# Load the keras model
+model = load_model(dir_name+'/models/'+object_name+'.h5')
+
+# Convert it into onnx
+onnx_model = keras2onnx.convert_keras(model, model.name)
+
+# Save the model as flower.onnx
+onnx.save_model(onnx_model, dir_name+'/models/'+object_name+'.onnx')
