@@ -1,5 +1,5 @@
-from ..generator import model
-from ..check import classes
+from generator import model
+from check import classes
 import os
 import cv2
 import numpy as np
@@ -33,6 +33,6 @@ prob = np.max(pred[0])
 label = classes[index]
 
 # Display the image and print the predicted class name with its confidence.
-print("Predicted Flowers is : {} {:.2f}%".format(label, prob*100))
+print("Predicted : {} {:.2f}%".format(label, prob*100))
 plt.imshow(img[:, :, ::-1])
 plt.axis("off")
