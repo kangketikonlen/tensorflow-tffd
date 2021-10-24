@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from tensorflow import keras
 
 # Define class names and sort them alphabatically as this is how tf.keras remembers them
-labels = ['moona', 'risu']
+labels = ['moona', 'risu', 'gilang']
 labels.sort()
 
 dir_name = os.getcwd()

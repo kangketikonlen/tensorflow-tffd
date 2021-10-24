@@ -40,7 +40,7 @@ plt.legend()
 plt.show()
 
 # Read the rose image
-target = "moona1.jpg"
+target = "gilang1.jpg"
 path = os.getcwd()
 samples_path = os.path.join(path, "samples/", target)
 img = cv2.imread(samples_path)
