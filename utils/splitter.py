@@ -2,7 +2,7 @@ import cv2
 import os
 
 path = os.getcwd()
-object_name = "gilang"
+object_name = "risu"
 filename = object_name+".mp4"
 upload_dir = os.path.join(path, "uploads/", filename)
 output_dir = os.path.join(path, "outputs/"+object_name+"/")

@@ -12,7 +12,7 @@ dir_name = os.getcwd()
 model = keras.models.load_model(dir_name+'/models/datasets.h5')
 
 # Read the rose image
-target = "moona1.jpg"
+target = "risu1.jpg"
 samples_path = os.path.join(dir_name, "utils", "samples", target)
 img = cv2.imread(samples_path)
 

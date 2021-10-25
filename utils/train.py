@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from generator import model, train_data_generator, vald_data_generator, batch_size
 from check import classes
-from splitter import object_name
+#from splitter import object_name
 
 epochs = 5
 
